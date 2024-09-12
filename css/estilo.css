@@ -7,7 +7,7 @@ body {
   background-color: #f4f4f4;
 }
 
-/* Estilização do Header */
+
 header {
   background-color: #fff;
   padding: 10px 20px;
@@ -22,33 +22,34 @@ header img {
 
 nav {
   display: flex;
-  gap: 10px; /* Espaçamento entre os itens do menu */
+  gap: 10px; 
 }
 
-/* Estilização dos Links do Menu */
+
 .link-menu {
   color: #fff;
-  padding: 8px 20px; /* Ajustei o padding para ficar mais parecido com o modelo */
-  border-radius: 20px; /* Borda arredondada */
+  padding: 8px 20px; 
+  border-radius: 20px; 
   font-family: 'Poppins';
   text-transform: uppercase;
+  display: inline-block; 
+}
+.link-menu a {
   text-decoration: none;
-  display: inline-block; /* Para garantir que o padding seja aplicado corretamente */
 }
 
-/* Cor de Fundo para cada link do menu */
-.link-menu { background-color: #333; } /* Fundo cinza escuro para o botão INÍCIO */
-.f { background-color: #5b305a; } /* Cor para FILME */
-.l { background-color: #e49756; } /* Cor para LIVRO */
-.m { background-color: #e04b5a; } /* Cor para MÚSICA */
+.link-menu { background-color: #333; } 
+.f { background-color: #5b305a; } 
+.l { background-color: #e49756; } 
+.m { background-color: #e04b5a; } 
 
-/* Efeito de Hover nos Links */
+
 .link-menu:hover {
   opacity: 0.8;
   transition: 0.3s ease;
 }
 
-/* Estilo Principal para 'index', 'livro', 'filme' e 'musica' */
+
 main {
   background-color: #333;
   color: #ddd;
@@ -89,7 +90,7 @@ p {
   color: #fff;
 }
 
-/* Estilo da Galeria de Imagens na página 'index' */
+
 #second {
   display: flex;
   justify-content: center;
@@ -103,7 +104,7 @@ p {
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
 }
 
-/* Estilo do footer */
+
 footer {
   background-color: #333;
   color: #ddd;
@@ -120,9 +121,9 @@ footer a:hover {
   color: #e04b5a;
 }
 
-/* Página Livro */
+
 #livro {
-  background-color: #e49756; /* Cor semelhante à do exemplo da página Livro */
+  background-color: #e49756; 
 }
 
 #livro h2 {
@@ -133,9 +134,9 @@ footer a:hover {
   margin-bottom: 40px;
 }
 
-/* Página Música */
+
 #musica {
-  background-color: #e04b5a; /* Cor semelhante à do exemplo da página Música */
+  background-color: #e04b5a; 
 }
 
 #musica h2 {
@@ -146,9 +147,9 @@ footer a:hover {
   margin-bottom: 40px;
 }
 
-/* Estilização do botão de compra ou streaming */
+
 .purchase-button, .streaming-button {
-  background-color: #e49756; /* Cor para o botão na página Livro */
+  background-color: #e49756; 
   color: #fff;
   padding: 10px 20px;
   text-align: center;
@@ -162,7 +163,7 @@ footer a:hover {
   cursor: pointer;
 }
 
-/* Botão específico para a página Música */
+
 .streaming-button {
-  background-color: #e04b5a; /* Cor do botão na página Música */
+  background-color: #e04b5a; 
 }

@@ -27,7 +27,7 @@ nav {
 
 /* Estilização dos Links do Menu */
 .link-menu {
-  color: #fff;
+  color: #444;
   padding: 8px 20px; /* Ajustei o padding para ficar mais parecido com o modelo */
   border-radius: 20px; /* Borda arredondada */
   font-family: 'Poppins';

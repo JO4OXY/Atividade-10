@@ -1,45 +1,145 @@
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Poppins&display=swap');
 
 body {
-  font-family: 'Poppins';
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
 }
 
-header, #principal, #second, #contato, #stream {
-	
+/* Estilização do Header */
+header {
+  background-color: #fff;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header img {
+  max-height: 50px;
+}
+
+nav {
+  display: flex;
+  gap: 10px;
 }
 
 .link-menu {
   color: #fff;
-  background-color: #555;
+  padding: 5px 15px;
+  border-radius: 5px;
+  font-family: 'Poppins';
+  text-transform: uppercase;
+  text-decoration: none;
 }
 
-.f {
-  background-color: #5b305a;
+.f { background-color: #5b305a; }
+.l { background-color: #e49756; }
+.m { background-color: #e04b5a; }
+
+.link-menu:hover {
+  opacity: 0.8;
 }
 
-.l {
-  background-color: #e49756;
-}
-
-.m {
-  background-color: #e04b5a;
-}
-
+/* Estilo Principal para 'index' e 'filme' */
 main {
   background-color: #333;
   color: #ddd;
+  padding: 40px 20px;
 }
 
-h1, h2 {
-  font-family: 'Amatic SC';
-}
-
-#second a{
-  color: #fff;
-}
-
-footer {
+#principal, #filme {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
   background-color: #333;
   color: #ddd;
 }
 
+#principal img, #filme img {
+  width: 40%;
+  margin-right: 40px;
+}
+
+#principal div, #filme div {
+  max-width: 600px;
+}
+
+h1, h2 {
+  font-family: 'Amatic SC', cursive;
+  font-size: 3em;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+p {
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.8;
+  font-size: 1.2em;
+}
+
+#second a {
+  color: #fff;
+}
+
+/* Estilo da Galeria de Imagens na página 'index' */
+#second {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px 0;
+}
+
+#second img {
+  max-width: 200px;
+  border-radius: 5px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Estilo do footer */
+footer {
+  background-color: #333;
+  color: #ddd;
+  text-align: center;
+  padding: 10px 0;
+}
+
+footer a {
+  color: #fff;
+  margin: 0 10px;
+}
+
+footer a:hover {
+  color: #e04b5a;
+}
+
+/* Página Filme */
+#filme {
+  background-color: #5b305a;
+}
+
+#filme h2 {
+  color: #ddd;
+}
+
+#filme div {
+  margin-bottom: 40px;
+}
+
+/* Estilização do botão de plataformas de streaming */
+.streaming-button {
+  background-color: #5b305a;
+  color: #fff;
+  padding: 10px 20px;
+  text-align: center;
+  font-size: 1.2em;
+  margin: 20px 0;
+  border-radius: 5px;
+}
+
+.streaming-button:hover {
+  background-color: #444;
+  cursor: pointer;
+}

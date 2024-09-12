@@ -20,56 +20,42 @@ header img {
   max-height: 50px;
 }
 
-/* Menu de navegação */
 nav {
   display: flex;
-  gap: 15px; /* Espaçamento entre os botões */
-  justify-content: flex-end; /* Alinha os botões à direita */
+  gap: 10px; /* Espaçamento entre os itens do menu */
 }
 
+/* Estilização dos Links do Menu */
 .link-menu {
   color: #fff;
-  padding: 8px 20px; /* Ajuste de padding para ficar parecido com o design */
-  border-radius: 30px; /* Borda mais arredondada */
-  font-family: 'Poppins', sans-serif;
+  padding: 8px 20px; /* Ajustei o padding para ficar mais parecido com o modelo */
+  border-radius: 20px; /* Borda arredondada */
+  font-family: 'Poppins';
   text-transform: uppercase;
   text-decoration: none;
-  display: inline-block;
-  font-size: 0.9em;
-  font-weight: 500;
+  display: inline-block; /* Para garantir que o padding seja aplicado corretamente */
 }
 
-/* Cor de Fundo para cada link */
-.inicio {
-  background-color: #444; /* Fundo cinza para "Início" */
-}
+/* Cor de Fundo para cada link do menu */
+.inicio { background-color: #444; } /* Fundo cinza escuro para o botão INÍCIO */
+.f { background-color: #5b305a; } /* Cor para FILME */
+.l { background-color: #e49756; } /* Cor para LIVRO */
+.m { background-color: #e04b5a; } /* Cor para MÚSICA */
 
-.f {
-  background-color: #5b305a; /* Fundo para "Filme" */
-}
-
-.l {
-  background-color: #e49756; /* Fundo para "Livro" */
-}
-
-.m {
-  background-color: #e04b5a; /* Fundo para "Música" */
-}
-
-/* Hover nos links */
+/* Efeito de Hover nos Links */
 .link-menu:hover {
-  opacity: 0.9;
+  opacity: 0.8;
   transition: 0.3s ease;
 }
 
-/* Estilo Principal */
+/* Estilo Principal para 'index', 'livro', 'filme' e 'musica' */
 main {
   background-color: #333;
   color: #ddd;
   padding: 40px 20px;
 }
 
-#principal, #filme, #livro {
+#principal, #livro, #filme, #musica {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -78,12 +64,12 @@ main {
   color: #ddd;
 }
 
-#principal img, #filme img, #livro img {
+#principal img, #livro img, #filme img, #musica img {
   width: 40%;
   margin-right: 40px;
 }
 
-#principal div, #filme div, #livro div {
+#principal div, #livro div, #filme div, #musica div {
   max-width: 600px;
 }
 
@@ -100,7 +86,25 @@ p {
   font-size: 1.2em;
 }
 
-/* Estilo do rodapé */
+#second a {
+  color: #fff;
+}
+
+/* Estilo da Galeria de Imagens na página 'index' */
+#second {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px 0;
+}
+
+#second img {
+  max-width: 200px;
+  border-radius: 5px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Estilo do footer */
 footer {
   background-color: #333;
   color: #ddd;
@@ -115,4 +119,51 @@ footer a {
 
 footer a:hover {
   color: #e04b5a;
+}
+
+/* Página Livro */
+#livro {
+  background-color: #e49756; /* Cor semelhante à do exemplo da página Livro */
+}
+
+#livro h2 {
+  color: #fff;
+}
+
+#livro div {
+  margin-bottom: 40px;
+}
+
+/* Página Música */
+#musica {
+  background-color: #e04b5a; /* Cor semelhante à do exemplo da página Música */
+}
+
+#musica h2 {
+  color: #fff;
+}
+
+#musica div {
+  margin-bottom: 40px;
+}
+
+/* Estilização do botão de compra ou streaming */
+.purchase-button, .streaming-button {
+  background-color: #e49756; /* Cor para o botão na página Livro */
+  color: #fff;
+  padding: 10px 20px;
+  text-align: center;
+  font-size: 1.2em;
+  margin: 20px 0;
+  border-radius: 5px;
+}
+
+.purchase-button:hover, .streaming-button:hover {
+  background-color: #444;
+  cursor: pointer;
+}
+
+/* Botão específico para a página Música */
+.streaming-button {
+  background-color: #e04b5a; /* Cor do botão na página Música */
 }

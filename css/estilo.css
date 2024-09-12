@@ -28,15 +28,16 @@ nav {
 /* Estilização dos Links do Menu */
 .link-menu {
   color: #fff;
-  padding: 5px 15px;
-  border-radius: 5px;
+  padding: 8px 20px; /* Ajustei o padding para ficar mais parecido com o modelo */
+  border-radius: 20px; /* Borda arredondada */
   font-family: 'Poppins';
   text-transform: uppercase;
   text-decoration: none;
+  display: inline-block; /* Para garantir que o padding seja aplicado corretamente */
 }
 
 /* Cor de Fundo para cada link do menu */
-.inicio { background-color: #999; } /* Fundo cinza para o botão INÍCIO */
+.inicio { background-color: #444; } /* Fundo cinza escuro para o botão INÍCIO */
 .f { background-color: #5b305a; } /* Cor para FILME */
 .l { background-color: #e49756; } /* Cor para LIVRO */
 .m { background-color: #e04b5a; } /* Cor para MÚSICA */
@@ -44,6 +45,7 @@ nav {
 /* Efeito de Hover nos Links */
 .link-menu:hover {
   opacity: 0.8;
+  transition: 0.3s ease;
 }
 
 /* Estilo Principal para 'index', 'livro', 'filme' e 'musica' */

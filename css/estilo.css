@@ -50,19 +50,12 @@ nav {
 
 /* Estilo Principal para 'index', 'livro', 'filme' e 'musica' */
 main {
-  background-color: #5b305a;
+  background-color: #333;
   color: #ddd;
   padding: 40px 20px;
 }
 
-#principal, #livro, #filme, #musica {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 40px 20px;
-  background-color: ##5b305a;
-  color: #ddd;
-}
+
 
 #principal img, #livro img, #filme img, #musica img {
   width: 40%;

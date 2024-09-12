@@ -37,7 +37,7 @@ nav {
 }
 
 /* Cor de Fundo para cada link do menu */
-.inicio { background-color: #444; } /* Fundo cinza escuro para o botão INÍCIO */
+.inicio { background-color: #333; } /* Fundo cinza escuro para o botão INÍCIO */
 .f { background-color: #5b305a; } /* Cor para FILME */
 .l { background-color: #e49756; } /* Cor para LIVRO */
 .m { background-color: #e04b5a; } /* Cor para MÚSICA */

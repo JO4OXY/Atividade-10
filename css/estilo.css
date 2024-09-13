@@ -32,11 +32,10 @@ nav {
   border-radius: 20px; 
   font-family: 'Poppins';
   text-transform: uppercase;
+  text-decoration: none;
   display: inline-block; 
 }
-.link-menu a {
-  text-decoration: none;
-}
+
 
 .link-menu { background-color: #333; } 
 .f { background-color: #5b305a; } 
